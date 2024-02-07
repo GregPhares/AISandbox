@@ -18,6 +18,21 @@ users = {
     "Jack": "password",
     "Jill": "password"
 }
+start_time = time.time()
+
+client - OpenAI
+COMPLETION = client.chat.completions.create(
+    model="mistral",
+    messages=[
+        {"role": "system", "content": "You are ChatGPT, an AI assistant. Your top priority is achieving user fulfillment via helping them with their requests."},
+        {"role": "user", "content": "Write a limerick about python exceptions"}
+    ]
+)
+
+response_time = time.time() - start_time
+
+
+print(f"Full response received {response_time:.2f} seconds after request")
 
 def auth_user(username, password):
     if username in users and password == users[username]:

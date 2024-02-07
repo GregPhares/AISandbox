@@ -10,7 +10,7 @@
       "provider": "openai",
       "model": "mistral",
       "apiKey": "EMPTY",
-      "apiBase": "http://localhost:8000"
+      "apiBase": "http://localhost:8000/v1/"
     }
   ],
   "modelRoles": {
